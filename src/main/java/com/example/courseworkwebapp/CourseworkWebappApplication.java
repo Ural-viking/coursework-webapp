@@ -1,0 +1,13 @@
+package com.example.courseworkwebapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CourseworkWebappApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(CourseworkWebappApplication.class, args);
+    }
+
+}
