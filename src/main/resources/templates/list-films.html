@@ -42,7 +42,7 @@
             <th>Title</th>
             <th>Country</th>
             <th>Genre</th>
-            <th>Year</th>
+            <th>Premiere</th>
         </tr>
         </thead>
         <tbody>
@@ -50,7 +50,7 @@
             <td th:text="${film.title}" />
             <td th:text="${film.country}" />
             <td th:text="${film.genre}" />
-            <td th:text="${film.year}" />
+            <td th:text="${film.premiere}" />
             <td>
                 <a th:href="@{/showUpdateForm(filmId=${film.id})}" class="btn btninfo">Update</a>
 

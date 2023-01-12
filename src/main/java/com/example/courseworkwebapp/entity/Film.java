@@ -28,6 +28,6 @@ public class Film {
     @Column(name = "genre")
     private String genre;
 
-    @Column(name = "year")
-    private int year;
+    @Column(name = "premiere")
+    private int premiere;
 }
