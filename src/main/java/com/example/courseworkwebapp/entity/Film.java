@@ -4,8 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
+import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -28,6 +29,6 @@ public class Film {
     @Column(name = "genre")
     private String genre;
 
-    @Column(name = "premiere")
-    private int premiere;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date premiere;
 }

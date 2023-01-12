@@ -43,6 +43,7 @@
             <th>Country</th>
             <th>Genre</th>
             <th>Premiere</th>
+
         </tr>
         </thead>
         <tbody>
@@ -50,7 +51,7 @@
             <td th:text="${film.title}" />
             <td th:text="${film.country}" />
             <td th:text="${film.genre}" />
-            <td th:text="${film.premiere}" />
+            <td th:text="${#dates.format(film.premiere, 'dd-MM-yyyy')}" />
             <td>
                 <a th:href="@{/showUpdateForm(filmId=${film.id})}" class="btn btninfo">Update</a>
 

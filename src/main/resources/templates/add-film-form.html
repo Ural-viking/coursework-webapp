@@ -29,17 +29,16 @@
     </div>
 </nav>
 <div class="container">
-
     <hr/>
-
     <h3>Add New Film</h3>
     <hr/>
-
     <form th:action="@{/saveFilm}" th:object="${film}" method="POST">
-        <input type="text" th:field="*{title}" class="form-control col-4 mb-4" placeholder="Enter Title"/>
-        <input type="text" th:field="*{country}" class="form-control col-4 mb-4" placeholder="Enter Country"/>
-        <input type="text" th:field="*{genre}" class="form-control col-4 mb-4" placeholder="Enter Genre"/>
-        <input type="text" th:field="*{premiere}" class="form-control col-4 mb-4" placeholder="Enter Premiere"/>
+        <div>
+            <input type="text" th:field="*{title}" class="form-control col-4 mb-4" placeholder="Enter Title"/>
+            <input type="text" th:field="*{country}" class="form-control col-4 mb-4" placeholder="Enter Country"/>
+            <input type="text" th:field="*{genre}" class="form-control col-4 mb-4" placeholder="Enter Genre"/>
+            <input type="date" th:field="*{premiere}" class="form-control col-4 mb-4" placeholder="Enter Genre"/>
+        </div>
 
         <button type="submit" class="btn btn-primary col-2">Save</button>
 
